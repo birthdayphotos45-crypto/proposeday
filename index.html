@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Heart's Question 💕</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden">
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <!-- Sparkle Container -->
+    <div class="sparkle-container" id="sparkleContainer"></div>
+
+    <!-- Section 1: Welcome/Landing -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden" id="welcome">
+        <div class="absolute inset-0 gradient-bg-1"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <div class="floating mb-6">
+                <span class="text-6xl md:text-8xl">💕</span>
+            </div>
+            <h1 class="script-font text-5xl md:text-7xl text-white mb-6 drop-shadow-lg opacity-0 fade-in-up" style="animation-delay: 0.3s;">
+                Hello My Love
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-8 font-light opacity-0 fade-in-up" style="animation-delay: 0.6s;">
+                I've been waiting for this moment...
+            </p>
+            <button onclick="scrollToStory()" class="btn-magic opacity-0 fade-in-up" style="animation-delay: 0.9s;">
+                <span>Begin Our Story</span>
+                <span class="arrow">→</span>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Section 2: Our Story Timeline -->
+    <section class="min-h-screen relative py-20" id="story">
+        <div class="absolute inset-0 gradient-bg-2"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-4">
+            <h2 class="script-font text-5xl md:text-6xl text-center text-rose-700 mb-16 drop-shadow-md">
+                Our Beautiful Journey
+            </h2>
+            
+            <div class="timeline-container">
+                <!-- Memory 1 -->
+                <div class="timeline-item left fade-in-scroll">
+                    <div class="timeline-content glass-card">
+                        <div class="text-4xl mb-3">✨</div>
+                        <h3 class="font-semibold text-rose-800 text-lg mb-2">The Day We Met</h3>
+                        <p class="text-gray-600 text-sm">From that very first smile, I knew my life would never be the same.</p>
+                        <span class="timeline-date">Chapter 1</span>
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="photo-placeholder rose-gold">
+                            <span class="text-3xl">👋</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory 2 -->
+                <div class="timeline-item right fade-in-scroll">
+                    <div class="timeline-content glass-card">
+                        <div class="text-4xl mb-3">🌙</div>
+                        <h3 class="font-semibold text-rose-800 text-lg mb-2">Our First Date</h3>
+                        <p class="text-gray-600 text-sm">Time stopped when I looked into your eyes. It was magic.</p>
+                        <span class="timeline-date">Chapter 2</span>
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="photo-placeholder lavender">
+                            <span class="text-3xl">☕</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory 3 -->
+                <div class="timeline-item left fade-in-scroll">
+                    <div class="timeline-content glass-card">
+                        <div class="text-4xl mb-3">💫</div>
+                        <h3 class="font-semibold text-rose-800 text-lg mb-2">Countless Adventures</h3>
+                        <p class="text-gray-600 text-sm">Every moment with you became my favorite memory.</p>
+                        <span class="timeline-date">Chapter 3</span>
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="photo-placeholder mint">
+                            <span class="text-3xl">🗺️</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory 4 -->
+                <div class="timeline-item right fade-in-scroll">
+                    <div class="timeline-content glass-card">
+                        <div class="text-4xl mb-3">🏠</div>
+                        <h3 class="font-semibold text-rose-800 text-lg mb-2">Building Our World</h3>
+                        <p class="text-gray-600 text-sm">Together, we created something beautiful. Our love, our home.</p>
+                        <span class="timeline-date">Chapter 4</span>
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="photo-placeholder peach">
+                            <span class="text-3xl">🔑</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <button onclick="scrollToReasons()" class="btn-rose">
+                    Continue to My Heart
+                    <span class="ml-2">💌</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Reasons Why I Love You -->
+    <section class="min-h-screen relative py-20" id="reasons">
+        <div class="absolute inset-0 gradient-bg-3"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-4">
+            <h2 class="script-font text-5xl md:text-6xl text-center text-purple-800 mb-6 drop-shadow-md">
+                1000 Reasons Why I Love You
+            </h2>
+            <p class="text-center text-purple-600 mb-12 text-lg">Here are just a few...</p>
+            
+            <div class="reasons-grid">
+                <div class="reason-card fade-in-scroll">
+                    <div class="reason-icon">😊</div>
+                    <p>Your smile lights up my entire world</p>
+                </div>
+                <div class="reason-card fade-in-scroll">
+                    <div class="reason-icon">🤗</div>
+                    <p>Your hugs feel like home</p>
+                </div>
+                <div class="reason-card fade-in-scroll">
+                    <div class="reason-icon">😂</div>
+                    <p>Your laugh is my favorite sound</p>
+                </div>
+                <div class="reason-card fade-in-scroll">
+                    <div class="reason-icon">🧠</div>
+                    <p>Your brilliant mind inspires me</p>
+                </div>
+                <div class="reason-card fade-in-scroll">
+                    <div class="reason-icon">💪</div>
+                    <p>Your strength amazes me every day</p>
+                </div>
+                <div class="reason-card fade-in-scroll">
+                    <div class="reason-icon">💖</div>
+                    <p>Your kind heart changes everything</p>
+                </div>
+                <div class="reason-card fade-in-scroll">
+                    <div class="reason-icon">🎨</div>
+                    <p>You make ordinary moments magical</p>
+                </div>
+                <div class="reason-card fade-in-scroll">
+                    <div class="reason-icon">🌟</div>
+                    <p>You believe in me when I don't</p>
+                </div>
+            </div>
+
+            <div class="love-letter mt-16 fade-in-scroll">
+                <div class="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="letter">
+                        <p class="handwritten text-xl text-gray-700 leading-relaxed">
+                            "Every day I spend with you is my new favorite day.<br>
+                            You are my today and all of my tomorrows."<br><br>
+                            With all my love,<br>
+                            <span class="script-font text-2xl text-rose-600">Your Motka</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button onclick="scrollToQuestion()" class="btn-purple pulse-glow">
+                    The Big Question
+                    <span class="ml-2">💍</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: The Proposal -->
+    <section class="min-h-screen relative flex items-center justify-center" id="question">
+        <div class="absolute inset-0 gradient-bg-4"></div>
+        
+        <!-- Ring Animation -->
+        <div class="ring-container" id="ringContainer">
+            <div class="ring-glow"></div>
+            <div class="ring">💍</div>
+            <div class="sparkles-ring">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <div class="proposal-content">
+                <p class="text-2xl md:text-3xl text-white/90 mb-6 font-light fade-in-up">
+                    I've loved you in countless ways,
+                </p>
+                <p class="text-2xl md:text-3xl text-white/90 mb-6 font-light fade-in-up" style="animation-delay: 0.3s;">
+                    in countless moments,
+                </p>
+                <p class="text-2xl md:text-3xl text-white/90 mb-10 font-light fade-in-up" style="animation-delay: 0.6s;">
+                    and I want to love you for countless more...
+                </p>
+                
+                <h2 class="script-font text-6xl md:text-8xl text-white mb-12 drop-shadow-2xl fade-in-up" style="animation-delay: 1s;">
+                    Will You Accept My Proposal Baby ?
+                </h2>
+
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center fade-in-up" style="animation-delay: 1.3s;">
+                    <button onclick="sayYes()" class="btn-yes group">
+                        <span class="heart-beat">YES!</span>
+                        <span class="text-sm font-normal block mt-1">A thousand times YES!</span>
+                    </button>
+                    <button id="noBtn" class="btn-no" onmouseover="moveNoButton()">
+                        No... 😢
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: YES Response -->
+    <section class="min-h-screen relative flex items-center justify-center hidden" id="yesResponse">
+        <div class="absolute inset-0 yes-gradient"></div>
+        <canvas id="confettiCanvas" class="absolute inset-0 pointer-events-none"></canvas>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <div class="celebration-emoji text-8xl mb-6 bounce-in">🎉💍🎉</div>
+            <h2 class="script-font text-6xl md:text-8xl text-white mb-6 drop-shadow-2xl">
+                She Said YES!
+            </h2>
+            <p class="text-2xl md:text-3xl text-white/90 mb-8">
+                You just made me the happiest person alive!
+            </p>
+            <div class="countdown-box glass-card max-w-md mx-auto">
+                <p class="text-rose-700 font-medium mb-2">Days until forever begins:</p>
+                <div class="countdown-display" id="countdown">∞</div>
+            </div>
+            <div class="mt-8">
+                <p class="text-white/80 text-lg italic">
+                    "I promise to love you forever, today, tomorrow, and always." 💕
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Control -->
+    <div class="music-control" id="musicControl">
+        <button onclick="toggleMusic()" class="music-btn" id="musicBtn">
+            <span id="musicIcon">🎵</span>
+        </button>
+    </div>
+
+    <!-- Hidden Audio -->
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
